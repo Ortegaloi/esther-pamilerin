@@ -46,7 +46,7 @@ class _DedicationPageState extends State<DedicationPage> {
                 emissionFrequency: 0.05,
                 numberOfParticles: 150,
                 gravity: 0.1,
-                shouldLoop: false,
+                shouldLoop: true,
                 colors: [
                   Colors.pink.shade300,
                   Colors.yellow.shade300,
