@@ -44,7 +44,7 @@ class _DedicationPageState extends State<DedicationPage> {
                 maxBlastForce: 20,
                 minBlastForce: 5,
                 emissionFrequency: 0.05,
-                numberOfParticles: 25,
+                numberOfParticles: 150,
                 gravity: 0.1,
                 shouldLoop: false,
                 colors: [
