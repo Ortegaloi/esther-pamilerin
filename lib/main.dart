@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'app.dart';
 
-void main(){
+import 'package:flutter_web_plugins/flutter_web_plugins.dart';
+
+void main() {
+  setUrlStrategy(HashUrlStrategy());
+ 
   runApp(const WritingApp());
 }

@@ -6,7 +6,7 @@ class AppHeader extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: const Text('Toluwase'),
+      title: const Text('Toluwalase'),
       actions: [
         TextButton(
           onPressed: () => Navigator.pushNamed(context, '/'),
@@ -20,6 +20,10 @@ class AppHeader extends StatelessWidget implements PreferredSizeWidget {
           onPressed: () => Navigator.pushNamed(context, '/about'),
           child: const Text('About'),
         ),
+        // TextButton(
+        //   onPressed: () => Navigator.pushNamed(context, '/for-you'), 
+        //   child: const Text('For you'),
+        // )
         
       ],
     );

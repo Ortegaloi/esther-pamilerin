@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Pamilerin Esther',
+                    'Esther Pamilerin',
                     style: textTheme.displaySmall?.copyWith(
                       fontWeight: FontWeight.w600,
                     ),
