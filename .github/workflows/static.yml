@@ -3,7 +3,6 @@ name: Deploy Flutter Web to GitHub Pages
 on:
   push:
     branches: ["main"]
-
   workflow_dispatch:
 
 permissions:
@@ -35,7 +34,8 @@ jobs:
         run: flutter pub get
 
       - name: Build Flutter Web
-        run: flutter build web --release
+        # <-- Set base-href to your repository subdirectory
+        run: flutter build web --release --base-href /esther-pamilerin/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
