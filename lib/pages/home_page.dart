@@ -12,39 +12,52 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: const AppHeader(),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 80),
-          child: Center(
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 820),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Esther Pamilerin',
-                    style: textTheme.displaySmall?.copyWith(
-                      fontWeight: FontWeight.w600,
+      body: Container(
+        width: double.infinity,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              colors.surface,
+              colors.surface.withAlpha(240),
+            ],
+          ),
+        ),
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 120),
+            child: Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 820),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Esther Pamilerin',
+                      style: textTheme.displaySmall?.copyWith(
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 16),
-                  Text(
-                    'Content Writer',
-                    style: textTheme.titleMedium?.copyWith(
-                      color: colors.onSurface.withAlpha(200),
-                      letterSpacing: 1.2,
+                    const SizedBox(height: 16),
+                    Text(
+                      'Content Writer',
+                      style: textTheme.titleMedium?.copyWith(
+                        color: colors.onSurface.withAlpha(180),
+                        letterSpacing: 1.2,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 32),
-                  Text(
-                    'I write to clarify ideas, shape narratives, and turn '
-                    'thought into meaning.',
-                    style: textTheme.bodyLarge?.copyWith(
-                      height: 1.7,
-                      fontSize: 18,
+                    const SizedBox(height: 40),
+                    Text(
+                      'I write to clarify ideas, shape narratives, and turn '
+                      'thought into meaning.',
+                      style: textTheme.bodyLarge?.copyWith(
+                        height: 1.8,
+                        fontSize: 18,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),

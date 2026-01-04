@@ -32,7 +32,20 @@ class AboutPage extends StatelessWidget {
                     height: 2,
                     color: colors.onSurface.withAlpha(90),
                   ),
-                  const SizedBox(height: 32),
+                  const SizedBox(height: 25),
+                   Center(
+                  child: ClipRRect(
+                  borderRadius: BorderRadius.circular(14),
+                  child: Image.asset(
+                  'images/writer.jpg',
+                  width: 220,
+                  height: 280,
+                  fit: BoxFit.cover,
+                  ),
+                  ),
+                  ),
+
+                  const SizedBox(height: 30),
                   Container(
                     padding: const EdgeInsets.all(28),
                     decoration: BoxDecoration(
