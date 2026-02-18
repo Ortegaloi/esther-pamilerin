@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Esther Pamilerin',
+                      'Adeogun Toluwalase',
                       style: textTheme.displaySmall?.copyWith(
                         fontWeight: FontWeight.w600,
                       ),

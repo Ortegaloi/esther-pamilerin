@@ -20,6 +20,10 @@ class AppHeader extends StatelessWidget implements PreferredSizeWidget {
           onPressed: () => Navigator.pushNamed(context, '/about'),
           child: const Text('About'),
         ),
+        TextButton(
+          onPressed: () => Navigator.pushNamed(context, 'setting'),
+          child: const Text('setting'),
+        )
         // TextButton(
         //   onPressed: () => Navigator.pushNamed(context, '/for-you'), 
         //   child: const Text('For you'),

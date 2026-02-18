@@ -4,6 +4,7 @@ import 'pages/works_page.dart';
 import 'pages/article_page.dart';
 import 'pages/about_page.dart'; 
 import 'pages/dedication_page.dart';
+import 'pages/setting_page.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings){
   final uri = Uri.parse(settings.name ?? '/');
@@ -26,7 +27,8 @@ Route<dynamic> generateRoute(RouteSettings settings){
 
     case 'for-you': 
     return MaterialPageRoute(builder: (_) => const DedicationPage());
-
+    case 'setting':
+    return MaterialPageRoute(builder: (_) => const SettingsPage());
     default: 
     return MaterialPageRoute(builder: (_) => const HomePage());
   }
